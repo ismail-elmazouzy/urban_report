@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f1f5f9;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem !important; }
+  h2 { font-size: 1.4rem !important; }
+
+  /* Navbar mobile */
+  nav > div:last-child {
+    flex-wrap: wrap !important;
+    gap: 0.8rem !important;
+  }
+
+  /* Cards grid mobile */
+  div[style*="repeat(auto-fit"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Padding mobile */
+  div[style*="padding: 3rem 2rem"] {
+    padding: 1.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hero mobile */
+  div[style*="5rem 2rem"] {
+    padding: 3rem 1rem !important;
+  }
+
+  /* Buttons mobile */
+  div[style*="flex-direction: row"] {
+    flex-direction: column !important;
+  }
+  
+  
+}
